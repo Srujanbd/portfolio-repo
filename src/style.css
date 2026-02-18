@@ -322,6 +322,23 @@ button:focus {
   }
 }
 
+.avatar-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 5px solid #6c63ff;
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+  background-color: white; /* in case of transparency */
+}
+
+@media (max-width: 767px) {
+  .avatar-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
@@ -441,6 +458,26 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
+}
+
+.social-icons a {
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #6c63ff !important;
+  text-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
+}
+
+.social-icons a svg {
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: rotate(360deg);
 }
 
 .blockquote-footer {

@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import cardio from "../../Assets/Projects/cardio.jpg";
+import environ from "../../Assets/Projects/environ.jpg";
 
 function Projects() {
   return (
@@ -19,7 +19,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={cardio}
               isBlog={false}
               title="Real-Time Smart IoT-Enabled Machine Learning Framework for Early Cardiovascular Risk Prediction and Detection"
               description="A comprehensive IoT-enabled machine learning framework designed to predict and detect early signs of cardiovascular diseases in real-time. The system integrates IoT sensors for vital sign monitoring, processes data using advanced ML algorithms, and provides real-time risk assessment for preventive healthcare."
@@ -30,7 +30,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={environ}
               isBlog={false}
               title="Environmental Hazard Prediction"
               description="A machine learning-based system that predicts environmental hazards using data analysis and predictive modeling. The project focuses on analyzing environmental factors and patterns to forecast potential hazards, enabling proactive measures for environmental safety and sustainability."
